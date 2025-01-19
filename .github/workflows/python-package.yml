@@ -8,51 +8,46 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write  # Needed for managing repository content
-  packages: write  # Required to publish packages to PyPI
-
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the repository
+      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Set up Python environment
+      # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.9"
 
-      # Step 3: Upgrade pip and install build dependencies
+      # Step 3: Install build tools and dependencies
       - name: Install build tools
-        run: |
-          python -m pip install --upgrade pip setuptools wheel twine
+        run: python -m pip install --upgrade pip setuptools wheel twine requests
 
       # Step 4: Build the package
       - name: Build the package
         run: |
           python setup.py sdist bdist_wheel
 
-      # Step 5: Check if version already exists on PyPI
+      # Step 5: Check if version exists on PyPI
       - name: Check if version exists on PyPI
         id: check-version
         run: |
           PACKAGE_NAME="seo-sentinel"
           VERSION=$(python setup.py --version)
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-          STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://pypi.org/project/$PACKAGE_NAME/$VERSION/)
+          STATUS_CODE=$(curl -o /dev/null -s -w "%{http_code}" https://pypi.org/project/$PACKAGE_NAME/$VERSION/)
           if [ "$STATUS_CODE" -eq 200 ]; then
-            echo "Version $VERSION already exists on PyPI. Skipping upload."
+            echo "The version $VERSION already exists on PyPI. Skipping upload."
             echo "upload_required=false" >> $GITHUB_ENV
           else
-            echo "Version $VERSION is not published on PyPI. Upload will proceed."
+            echo "Version $VERSION is not published on PyPI. Proceeding with upload."
             echo "upload_required=true" >> $GITHUB_ENV
+          fi
 
-      # Step 6: Publish to PyPI (only if required)
+      # Step 6: Publish to PyPI
       - name: Publish to PyPI
         if: env.upload_required == 'true'
         env:
@@ -60,16 +55,8 @@ jobs:
           TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: |
           python -m twine upload dist/*
-          echo "✅ Successfully published version $VERSION to PyPI."
 
-      # Step 7: Cleanup generated files
-      - name: Cleanup Distribution Files
-        run: |
-          rm -rf dist/ build/ *.egg-info
-          echo "🚮 Cleanup complete."
-
-      # Step 8: Workflow summary
-      - name: Workflow Summary
-        run: |
-          echo "Version: $VERSION"
-          echo "Upload required: ${{ env.upload_required }}"
+      # Step 7: Output success message
+      - name: Notify on success
+        if: env.upload_required == 'true'
+        run: echo "Successfully published SEO Sentinel to PyPI!"
