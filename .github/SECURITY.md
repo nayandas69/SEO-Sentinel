@@ -1,61 +1,71 @@
-# 🛡️ SECURITY.md  
+# 🛡️ **SECURITY.md**  
 
-**Yo fam!** 🫡 Welcome to the **SEO Sentinel** squad, where vibes are immaculate, and security is priority numero uno. 👀🔐  
+**Hey squad!** 💻✨ Welcome to the **SEO Sentinel** fam, where your website’s vibes are secured like Fort Knox. 🔐🚀 We’re all about keeping things chill, safe, and in the secure zone. Let’s roll:  
 
 ---
 
-## 🔐 Supported Versions  
-We’re kickstarting with our **`1.0.0-beta`** release. It’s our first drop, and we’re here for it. Just make sure to stick to the **latest version** to stay in the secure lane. 🚀  
+## 🔐 **Supported Versions**  
+Stay in the loop by always rolling with the **latest version**. Old versions? 🕸️ Nah, they’re outdated and NOT secured. Keep up, fam. 🚀  
 
 | **Version**     | **Status**           |  
 |------------------|----------------------|  
-| `1.0.0-beta`     | ❌ NOT Supported 😒      |  
-| `< 1.0.0-beta`   | ❌ Nah, that’s ancient. 👎 |  
+| `1.0.0`          | ✅ Supported 🛡️       |  
+| `1.0.0-beta`     | ❌ Deprecated 😬       |  
+| `< 1.0.0-beta`   | ❌ Not a vibe 🚫        |  
+
+🌟 **Pro Tip**: Always update for the freshest and safest experience. We got your back. 🙌  
 
 ---
 
-## 🧍‍♂️ Who’s This Tool For?  
-**SEO Sentinel** is built *exclusively for personal use.* 🙌  
-- It’s your personal wingman for SEO insights.  
-- Commercial or corporate vibes? 🚫 Nope, not here, chief.  
+## 🧍‍♂️ **Who’s SEO Sentinel For?**  
+This tool is your personal SEO sidekick:  
+- Built for **personal use only**. 👊  
+- No commercial or corporate shenanigans. 🚫  
 
-Let’s keep it chill and ethical, fam. Respect the hustle. 💻✨  
-
----
-
-## 🚨 Reporting Vulnerabilities  
-Found something sus? Don’t gatekeep. Spill the tea ASAP:  
-
-1. Post it in our [GitHub Issues](https://github.com/nayandas69/SEO-Sentinel/issues).  
-2. For low-key or private bugs, slide into my inbox:  
-   **✉️** [nayanchandradas@hotmail.com](mailto:nayanchandradas@hotmail.com)  
+Let’s keep it ethical and wholesome, yeah? Respect the grind. ✨  
 
 ---
 
-## ✋ What We Expect  
-If you’re about to report, here’s the deal:  
-- **Keep it real:** Tell us what’s broken, with deets.  
-- **Why it matters:** Let us know the impact.  
-- **Stay chill:** We’re all learning and building here. No bad vibes. 🙌  
+## 🚨 **Found Something Sus? Spill the Tea**  
+Got a bug? Found a vulnerability? Don’t gatekeep, fam. Here’s how to help us fix it:  
+
+1. Post it on our 🔗 [GitHub Issues](https://github.com/nayandas69/SEO-Sentinel/issues).  
+2. Wanna keep it on the DL? Slide into my inbox:  
+   📧 **Email:** [nayanchandradas@hotmail.com](mailto:nayanchandradas@hotmail.com).  
+
+We appreciate every heads-up and act on it fast. 🛠️🔥  
 
 ---
 
-## 🌟 Our Promise  
-When you hit us up, we’ll:  
-- Respond ASAP (no ghosting, scout’s honor ✋).  
-- Fix it like it’s hot 🔥.  
-- Keep you in the loop—because communication is key. 💬  
+## ✋ **How to Report Like a Pro**  
+Let’s make your report 🔥 with these steps:  
+- **Deets, deets, deets**: Tell us exactly what’s broken.  
+- **Why it’s important**: Help us understand the impact.  
+- **Keep it chill**: No drama, no bad vibes. We’re here to learn and grow together. 🌱✨  
 
 ---
 
-## 🚀 Staying Secure  
-Here’s how to stay safe and sound:  
-- Always run the **latest version** (don’t get caught slippin’).  
-- Keep tabs on our [Changelog](https://github.com/nayandas69/SEO-Sentinel/releases).  
+## 🌟 **Our Security Promise**  
+When you report something, here’s what we’ll do:  
+- 🚀 Jump on it ASAP (no ghosting, for real).  
+- 🧹 Patch it up like pros.  
+- 💬 Keep you posted every step of the way.   
+
+Communication = key. 🔑  
 
 ---
 
-That’s it, fam! Remember, this tool’s for *you*, the personal user, keeping things tight, ethical, and secure. You’re the real MVP for helping make this better. 🙏  
-*Stay safe. Stay vibey.* ✌️✨  
+## 🚀 **Staying Safe with SEO Sentinel**  
+Your security checklist:  
+1. **Run the latest version**: Don’t get caught slacking.  
+2. **Check updates regularly**: Follow our 🔗 [Changelog](https://github.com/nayandas69/SEO-Sentinel/releases) for details.  
+3. Avoid sketchy third-party mods or changes – we’re the real MVP for updates. 🏆  
 
 ---
+
+## ❤️ **Shoutout to You, the Real One**  
+By contributing, reporting issues, or just staying awesome, you help **SEO Sentinel** stay secure and vibey for everyone. 🌐✨  
+
+*Stay secure. Stay optimized.* ✌️🚀  
+
+---  
