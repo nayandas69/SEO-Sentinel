@@ -10,7 +10,7 @@ license = { file = "LICENSE" }
 requires-python = ">=3.7"
 keywords = ["seo", "crawler", "auditor", "website analysis", "python", "seo sentinel"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
