@@ -1,0 +1,36 @@
+[project]
+name = "seo-sentinel"
+version = "1.0.1"
+description = "SEO Sentinel is an automated SEO auditing tool that crawls websites, detects SEO issues, and generates comprehensive HTML reports."
+readme = "README.md"
+authors = [
+    { name = "nayandas69", email = "nayanchandradas@hotmail.com" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+keywords = ["seo", "crawler", "auditor", "website analysis", "python", "seo sentinel"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3"
+]
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "requests>=2.31",
+    "tqdm>=4.65",
+    "jinja2>=3.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/nayandas69/SEO-Sentinel"
+Repository = "https://github.com/nayandas69/SEO-Sentinel"
+Issues = "https://github.com/nayandas69/SEO-Sentinel/issues"
+
+[project.scripts]
+seo-sentinel = "seose:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
